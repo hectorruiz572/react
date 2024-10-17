@@ -5,7 +5,7 @@ import Consulta from "../pages/Consulta";
 import Layout from "../Layout/Layout";
 
 const Router = () => (
-  <BrowserRouter>
+  <BrowserRouter basename="/react">
     <Layout>
       <Routes>
         <Route index element={<Consulta />} />
