@@ -1,11 +1,11 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Alta from "../pages/Alta";
 import Baja from "../pages/Baja";
 import Consulta from "../pages/Consulta";
 import Layout from "../Layout/Layout";
 
 const Router = () => (
-  <HashRouter basename="/react">
+  <BrowserRouter basename="/react">
     <Layout>
       <Routes>
         <Route index element={<Consulta />} />
@@ -13,7 +13,7 @@ const Router = () => (
         <Route path="/Baja" element={<Baja />} />
       </Routes>
     </Layout>
-  </HashRouter>
+  </BrowserRouter>
 );
 
 export default Router;
